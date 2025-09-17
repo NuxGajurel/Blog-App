@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { IoMoonSharp } from "react-icons/io5";
 const Navbar = () => {
     const[open ,setOpen]=useState(false);
     const[dark ,serDark]=useState(false);
-     useEffect(() => {
+     useEffect (() => {
     if (dark) {
       document.body.classList.add("bg-black", "text-white");
     } else {
@@ -18,7 +20,7 @@ const Navbar = () => {
             dark ? "bg-black text-white" : "bg-white text-black"
           }`}
         >
-    <nav className="fixed top-0 w-full bg-white shadow">
+    <nav className="fixed top-0 w-full">
       <div className="h-16 flex justify-between items-center px-6">
    
         <div className="text-xl font-bold px-1">
@@ -33,7 +35,7 @@ const Navbar = () => {
             <Link to="/blogone"></Link>
           </div>
         <div>
-          <button onClick={()=> serDark(!dark)}> 🌙 </button>
+          <button onClick={()=> serDark(!dark)}> {dark ?<MdOutlineWbSunny/> :<IoMoonSharp/>} </button>
         </div>
           
            

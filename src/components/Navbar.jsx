@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
     const[open ,setOpen]=useState(false);
-
+    const[dark ,serDark]=useState(false);
+     useEffect(() => {
+    if (dark) {
+      document.body.classList.add("bg-black", "text-white");
+    } else {
+      document.body.classList.remove("bg-black", "text-white");
+    }
+  }, [dark]);
   return (
-    <div>  
+     <div
+          className={`h-16 flex justify-between items-center px-6 ${
+            dark ? "bg-black text-white" : "bg-white text-black"
+          }`}
+        >
     <nav className="fixed top-0 w-full bg-white shadow">
       <div className="h-16 flex justify-between items-center px-6">
    
@@ -21,7 +32,9 @@ const Navbar = () => {
             <Link to="/about">About</Link>
             <Link to="/blogone"></Link>
           </div>
-        
+        <div>
+          <button onClick={()=> serDark(!dark)}> 🌙 </button>
+        </div>
           
            
         </div>

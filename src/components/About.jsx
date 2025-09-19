@@ -83,6 +83,9 @@ const About = () => {
   }}>Connect With Me</button>
   
 </div>
+ <div>
+  <h2 className='flex justify-center m-8 py-0'>@2025 Made By Nux Gajurel</h2>
+ </div>
 </div>
   );
 };

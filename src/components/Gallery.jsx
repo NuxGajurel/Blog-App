@@ -5,25 +5,32 @@ import Two from "../assets/2.JPG"
 const Gallery = () => {
     const items =[
         {
-            id:1 , url:Nux
+            id:1 , url:Nux , title :""
         },
         {
-            id:2 ,url:One
+            id:2 ,url:One , title :""
         },
         {
-            id:3,url:Two
+            id:3,url:Two , title :""
         },
     ]
   return (
     <div>
         <div>
-{
-    items.map((item)=>(
-        <div key={item.id} className="overflow-hidden rounded-2xl shadow-md">
-          <img src={item.url} alt={`Gallery item ${item.id}`} className="w-200 h-200 object-cover flex justify-between" />
-        </div>
-    ))
-}
+            <div>
+           <h2 className='text-2xl mt-4 m-2'> Photo</h2>
+          </div>
+      {
+        items.map((item)=>(
+
+            <div className='flex justify-between space-x-5'> 
+                <div className='' key={item.id}>
+                    <img src={item.url} alt="" />
+                </div>
+          
+            </div>
+        ))
+      }
 
         </div>
     </div>

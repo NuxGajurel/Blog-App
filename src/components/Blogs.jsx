@@ -20,16 +20,12 @@ const Blogs = () => {
 
   return (
     <div>
-      {/* Top Contents */}
-      {/* search bar ho  */}
+    
 <div>
 <input type="text" value={search} placeholder='Search Blogs.....' onChange={(e) => setSearch(e.target.value)} className='mt-33 border border-gray-300 rounded-lg px-4 py-2 w-70 max-w-md focus:outline-none m-4 focus:ring focus:ring-blue-300'/>
 </div>
-      {/* Grid */}
+     
       <div className="grid grid-cols-1 gap-3 mt-4 lg:grid-cols-3 lg:gap-10 py-10 m-4 justify-items-center">
-
-        
-        {/* 1st Blog */}
 
    {filteredBlogs.length > 0 ?(
         

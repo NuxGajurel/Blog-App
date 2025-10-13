@@ -75,14 +75,7 @@ const About = () => {
       ))}
 
 
-<div className=' bg-white shadow p-15 space-x-8 space-y-3 mx-auto'>
-  <button style={{
-    backgroundColor:"orange",
-    color:"white",
-    alignItems:"center",
-  }}>Connect With Me</button>
-  
-</div>
+
  <div>
   <h2 className='flex justify-center m-8 py-0'>@2025 Made By Nux Gajurel</h2>
  </div>

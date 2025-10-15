@@ -1,40 +1,13 @@
-import React from 'react'
-import Nux from "../assets/Nuxgajurel.jpg"
-import One from "../assets/1.JPG"
-import Two from "../assets/2.JPG"
+import React from "react";
+
 const Gallery = () => {
-    const items =[
-        {
-            id:1 , url:Nux , title :""
-        },
-        {
-            id:2 ,url:One , title :""
-        },
-        {
-            id:3,url:Two , title :""
-        },
-    ]
   return (
-    <div>
-        <div>
-            <div>
-           <h2 className='text-2xl mt-4 m-2'> Photo</h2>
-          </div>
-      {
-        items.map((item)=>(
+    <div className="flex flex-col items-center justify-center py-20">
+      <h2 className="text-2xl font-semibold mb-6">Photos</h2>
 
-            <div className='flex justify-between space-x-5'> 
-                <div className='' key={item.id}>
-                    <img src={item.url} alt="" />
-                </div>
-          
-            </div>
-        ))
-      }
-
-        </div>
+      <p className="text-gray-500 text-lg flex justify-center items-center">No Post Yet</p>
     </div>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

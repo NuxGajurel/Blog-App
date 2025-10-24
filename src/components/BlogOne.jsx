@@ -17,12 +17,12 @@ const BlogOne = () => {
   return (
     <div>
       <div className="max-w-100 lg:max-w-800">
-        <h1 className="lg:text-4xl text-orange-500 m-3 flex justify-center mt-20">
+        <h1 className="lg:text-4xl text-orange-500 m-3 flex justify-center mt-20 ml-8 text-2xl">
           Building My Own Website
         </h1>
 
         <div className="max-w-700">
-          <p className="mt-3 m-3 p-4 text-2xl flex justify-center">
+          <p className="ml-3 mr-3 p-4 text-2xl flex justify-center">
             When I first started learning web development, I had no idea where
             to begin. I just knew I wanted to build something real — something
             that I could see, click, and share with others. That’s why I decided
@@ -36,7 +36,7 @@ const BlogOne = () => {
             GitHub, I try to apply it here. This way, I am not just watching
             tutorials, I am actually building something with my own hands.
           </p>
-          <h3 className="text-3xl m-7">   What I Used to Build It</h3>
+          <h3 className="text-3xl m-7"> What I Used to Build It</h3>
           <p className="mt-3 m-3 p-4 text-2xl">
             - For now, this website is made with:
           </p>

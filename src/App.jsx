@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Blogs from "./components/Blogs";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
+import BlogOne from "./components/BlogOne";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/blogOne" element={<BlogOne />} />
+
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Nux from "../assets/3.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-
+import Navbar from "./Navbar";
 
 const Blogs = () => {
   const infoBlogs = [
@@ -23,13 +23,14 @@ const Blogs = () => {
 
   return (
     <div>
+     <navbar />
       <div>
         <input
           type="text"
           value={search}
           placeholder="Search Blogs....."
           onChange={(e) => setSearch(e.target.value)}
-          className="mt-33 border border-gray-300 rounded-lg px-4 py-2 w-70 max-w-md focus:outline-none m-4 focus:ring focus:ring-blue-300"
+          className="mt-33 border border-gray-300 rounded-lg px-4 py-2 w-full max-w-md focus:outline-none m-4 focus:ring focus:ring-blue-300"
         />
       </div>
 

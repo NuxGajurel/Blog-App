@@ -1,109 +1,192 @@
-import React, { useState } from "react";
-import { FaBookmark } from "react-icons/fa";
-import { LuHeart } from "react-icons/lu";
+import React from "react";
 
 const BlogOne = () => {
-  const [liked, setLiked] = useState(false);
-  const [likeCount, setLikeCount] = useState(0);
-  const [fav, setFav] = useState(false);
-
-  const handleLike = () => {
-    setLiked((prev) => !prev);
-    setLikeCount((prev) => (liked ? prev - 1 : prev + 1));
-  };
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white text-gray-800">
-      <header className="py-16 px-6 sm:px-10 lg:px-24 text-center">
-        <h1 className="text-4xl sm:text-6xl font-bold text-orange-500 mb-4">
-          Building My Own Website
-        </h1>
-        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-          A personal journey of learning, building, and growing as a developer.
-        </p>
-      </header>
+    <div className="bg-gray-950 text-gray-200 min-h-screen w-full">
+      {/* Full Width Section */}
+      <div className="w-full min-h-screen py-16 px-6 lg:px-20 xl:px-32">
+        {/* Centered Content Container */}
+        <div className="max-w-5xl mx-auto">
+          {/* Title */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
+            Why <span className="text-yellow-400">Curiosity</span> Matters More
+            Than Talent in Tech
+          </h1>
 
-      <main className="px-6 sm:px-10 lg:px-32 py-10 space-y-12">
-        <section className="space-y-6">
-          <p className="text-lg sm:text-xl leading-relaxed">
-            When I first started learning web development, I had no idea where
-            to begin. I just knew I wanted to build something real — something
-            that I could see, click, and share with others. That’s why I decided
-            to make this blog website.
+          {/* Intro */}
+          <p className="text-lg lg:text-xl text-gray-400 mb-4">
+            In tech, talent is admired.
           </p>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-semibold text-orange-500 mb-3">
-            Why I Built This Blog
-          </h2>
-          <p className="text-lg sm:text-xl leading-relaxed">
-            This website is more than just a project — it’s my practice ground.
-            Every time I learn something new about React, Tailwind CSS, or
-            GitHub, I apply it here. This way, I’m not just watching tutorials —
-            I’m building something real.
+          <p className="text-lg lg:text-xl text-gray-400 mb-8">
+            But curiosity is transformational.
           </p>
-        </section>
 
-        <section>
-          <h2 className="text-3xl font-semibold text-orange-500 mb-3">
-            What I Used to Build It
+          {/* Quote Box */}
+          <div className="bg-gray-900 border border-gray-800 p-6 rounded-2xl mb-12">
+            <p className="mb-2">“That developer is naturally gifted.”</p>
+            <p className="mb-2">“They just get coding.”</p>
+            <p>“They’re born for tech.”</p>
+          </div>
+
+          <p className="mb-2 font-semibold text-white text-lg">
+            But here’s the truth:
+          </p>
+          <p className="mb-1 text-lg">Talent might get you started.</p>
+          <p className="mb-12 text-yellow-400 font-semibold text-lg">
+            Curiosity is what makes you unstoppable.
+          </p>
+
+          {/* Section 1 */}
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+            🚀 Talent Gives You Speed. Curiosity Gives You Direction.
           </h2>
-          <ul className="list-disc list-inside text-lg sm:text-xl space-y-2 ml-3">
-            <li>React – for building fast and reusable components</li>
-            <li>Tailwind CSS – for styling quickly and responsively</li>
-            <li>GitHub – for saving my code and tracking my progress</li>
+
+          <p className="mb-4 text-gray-400 text-lg">
+            A talented developer may learn syntax quickly. A curious developer
+            asks:
+          </p>
+
+          <ul className="list-disc list-inside space-y-3 mb-8 text-gray-300 text-lg">
+            <li>Why does this work?</li>
+            <li>How does this scale?</li>
+            <li>What happens if this fails?</li>
+            <li>Can this be optimized?</li>
           </ul>
-        </section>
 
-        <section>
-          <h2 className="text-3xl font-semibold text-orange-500 mb-3">
-            My Plan for the Future
-          </h2>
-          <ul className="list-disc list-inside text-lg sm:text-xl space-y-2 ml-3">
-            <li>A better home page design</li>
-            <li>More blogs about what I’m learning</li>
-            <li>A working contact page</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-semibold text-orange-500 mb-3">
-            What I Learned
-          </h2>
-          <p className="text-lg sm:text-xl leading-relaxed">
-            Building this blog taught me that the best way to learn is by doing.
-            Even if my code isn’t perfect right now, every small improvement
-            helps me grow.
+          <p className="mb-2 text-lg">
+            Talent helps you understand what to do.
           </p>
-        </section>
+          <p className="mb-12 text-yellow-400 text-lg font-semibold">
+            Curiosity pushes you to understand why. And in tech, “why” is
+            everything.
+          </p>
 
-        <div className="border-t border-gray-300 pt-8 flex justify-center items-center gap-10 text-2xl">
-          <button
-            onClick={handleLike}
-            className="flex items-center gap-2 hover:scale-110 transition-transform"
-          >
-            <span className={`${liked ? "text-red-500" : "text-gray-500"}`}>
-              {liked ? "❤️" : <LuHeart />}
-            </span>
-            <span className="text-lg">{likeCount}</span>
-          </button>
+          {/* Section 2 */}
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+            🧠 Curiosity Builds Deep Thinkers
+          </h2>
 
-          <button
-            onClick={() => setFav(!fav)}
-            className="hover:scale-110 transition-transform"
-          >
-            <FaBookmark
-              className={`${fav ? "text-yellow-400" : "text-gray-400"}`}
-            />
-          </button>
+          <p className="mb-4 text-gray-400 text-lg">
+            Technology changes constantly:
+          </p>
+
+          <ul className="list-disc list-inside space-y-3 mb-8 text-gray-300 text-lg">
+            <li>New frameworks</li>
+            <li>New tools</li>
+            <li>New paradigms</li>
+            <li>New AI models</li>
+          </ul>
+
+          <p className="mb-2 text-lg">
+            If you rely only on talent, you may shine today.
+          </p>
+          <p className="mb-6 text-yellow-400 text-lg font-semibold">
+            If you rely on curiosity, you evolve forever.
+          </p>
+
+          <ul className="list-disc list-inside space-y-3 mb-12 text-gray-300 text-lg">
+            <li>Read documentation deeply</li>
+            <li>Explore source code</li>
+            <li>Test edge cases</li>
+            <li>Break systems to understand them</li>
+            <li>Build projects just to experiment</li>
+          </ul>
+
+          {/* Section 3 */}
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+            🔥 Curiosity Turns Problems Into Opportunities
+          </h2>
+
+          <p className="mb-4 text-gray-400 text-lg">When something breaks:</p>
+
+          <ul className="list-disc list-inside space-y-3 mb-8 text-gray-300 text-lg">
+            <li>A talented developer may fix it.</li>
+            <li>A curious developer studies it.</li>
+          </ul>
+
+          <p className="mb-4 text-gray-400 text-lg">That study builds:</p>
+
+          <ul className="list-disc list-inside space-y-3 mb-12 text-gray-300 text-lg">
+            <li>Debugging skills</li>
+            <li>System thinking</li>
+            <li>Architecture awareness</li>
+            <li>Performance intuition</li>
+          </ul>
+
+          <p className="mb-12 text-yellow-400 font-semibold text-lg">
+            Curiosity creates engineers. Talent creates coders.
+          </p>
+
+          {/* Section 4 */}
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+            💡 Curiosity Is Learnable. Talent Isn’t Required.
+          </h2>
+
+          <p className="mb-4 text-lg">
+            You don’t need to be the smartest person in the room. You just need
+            to keep asking:
+          </p>
+
+          <ul className="list-disc list-inside space-y-3 mb-12 text-gray-300 text-lg">
+            <li>Why?</li>
+            <li>How?</li>
+            <li>What if?</li>
+            <li>What’s under the hood?</li>
+          </ul>
+
+          <p className="mb-12 text-yellow-400 font-semibold text-lg">
+            Curiosity is a habit. And habits beat raw talent every single time.
+          </p>
+
+          {/* Section 5 */}
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+            🛑 The Danger of Relying on Talent Alone
+          </h2>
+
+          <p className="mb-4 text-gray-400 text-lg">
+            Talent can make you comfortable. Comfort kills growth.
+          </p>
+
+          <ul className="list-disc list-inside space-y-3 mb-12 text-gray-300 text-lg">
+            <li>“I already know this.”</li>
+            <li>“This is easy.”</li>
+            <li>“Good enough.”</li>
+          </ul>
+
+          <p className="mb-12 text-yellow-400 text-lg">
+            Curiosity keeps you uncomfortable — and that’s where growth lives.
+          </p>
+
+          {/* Section 6 */}
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+            🌱 How to Develop Curiosity in Tech
+          </h2>
+
+          <ul className="list-disc list-inside space-y-3 mb-12 text-gray-300 text-lg">
+            <li>Read beyond the tutorial</li>
+            <li>Rebuild features without libraries</li>
+            <li>Explore documentation like a book</li>
+            <li>Study system design basics</li>
+            <li>Ask senior developers deeper questions</li>
+            <li>Build side projects just to experiment</li>
+          </ul>
+
+          {/* Final */}
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+            💬 Final Thoughts
+          </h2>
+
+          <p className="mb-6 text-gray-400 text-lg">
+            The tech industry does not reward talent alone. It rewards
+            adaptability. It rewards problem-solvers. It rewards thinkers.
+          </p>
+
+          <p className="text-xl lg:text-2xl font-semibold text-yellow-400 mt-6">
+            Just stay curious. That alone can take you further than raw
+            intelligence ever could.
+          </p>
         </div>
-      </main>
-
-      <footer className="mt-20 pb-10 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} — Built with 💻 React & Tailwind CSS by Nux
-        Gajurel
-      </footer>
+      </div>
     </div>
   );
 };
